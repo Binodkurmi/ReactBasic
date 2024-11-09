@@ -13,6 +13,10 @@ export default function TextForm(props) {
 		let newtext = text.toLowerCase();
 		setText(newtext)
 	}
+	const handleCapitalizedClick = () => {
+		let mytext = text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
+		setText(mytext);
+	};
 	
 		const handleUpChange = (event)=>{
 			// console.log('onclick');
@@ -39,6 +43,9 @@ export default function TextForm(props) {
   				Convert to LowerCase
 				</button>	
 
+				<button className="btn btn-primary mx-2" onClick={handleCapitalizedClick} >
+  				Convert to TitleCase
+				</button>	
       </div>
 			<div className='container my-3' >
 				<h2>Your text summary</h2>
