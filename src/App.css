@@ -1,0 +1,25 @@
+/* App.css */
+
+/* Optional: Style for the search input field */
+.form-inline .form-control {
+  width: 200px; /* Adjust the width as needed */
+  transition: width 0.3s ease-in-out; /* Smooth transition for expanding */
+}
+
+.form-inline .form-control:focus {
+  width: 250px; /* Expand width on focus */
+  outline: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .form-inline .form-control {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .form-inline .btn-outline-success {
+    width: 100%;
+    margin-top: 8px; /* Add margin above the button for spacing */
+  }
+
+}
