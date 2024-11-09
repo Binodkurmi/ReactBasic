@@ -5,7 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <a className="navbar-brand" href="/">MyApp</a>
       <button 
         className="navbar-toggler" 
@@ -36,7 +36,7 @@ function Navbar() {
             aria-label="Search" 
           />
           <button 
-            className="btn btn-outline-success" 
+            className="btn btn-primary" 
             type="submit"
           >
             Search
